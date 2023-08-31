@@ -9,7 +9,7 @@ def index():
 @app.route('/api/messages', methods=['GET','POST'])
 def receive_message():
     try:
-        data = request.json  # Corrected: Use request.json without parentheses
+        data = request.json  
         message = data.get('message', '')
         print(f"Received message: {message}")
         return jsonify({"status": "Message received!"})
