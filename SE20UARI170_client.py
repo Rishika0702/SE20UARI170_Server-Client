@@ -4,7 +4,7 @@ import json  # Import the json module
 message = {"message": "Connected to the client!"}
 url = "http://127.0.0.1:8888/api/messages"
 
-headers = {"Content-Type": "application/json"}  # Set the correct Content-Type header
+headers = {"Content-Type": "application/json"}  
 
 response = requests.post(url, json=message, headers=headers)
 
