@@ -1,5 +1,5 @@
 import requests
-import json  # Import the json module
+import json  
 
 message = {"message": "Connected to the client!"}
 url = "http://127.0.0.1:8888/api/messages"
